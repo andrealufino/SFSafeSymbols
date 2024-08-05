@@ -10,8 +10,8 @@
         <img src="https://img.shields.io/badge/swift-5-FFAC45.svg" alt="Swift: 5">
     </a>
     <a href="https://github.com/SFSafeSymbols/SFSafeSymbols/releases">
-    <img src="https://img.shields.io/badge/version-4.1.1-blue.svg"
-    alt="Version: 4.1.1">
+    <img src="https://img.shields.io/badge/version-5.3-blue.svg"
+    alt="Version: 5.3">
     </a>
     <a href="#">
     <img src="https://img.shields.io/badge/Platforms-iOS%20|%20tvOS%20|%20watchOS%20|%20macOS-FF69B4.svg"
@@ -77,6 +77,11 @@ The following SF Symbols versions are currently supported:
 | 3.3 | 15.4 | 12.3 | 15.4 | 8.5 |
 | 4.0 | 16.0 | 13.0 | 16.0 | 9.0 |
 | 4.1 | 16.1 | 13.0 | 16.1 | 9.1 |
+| 4.2 | 16.4 | 13.3 | 16.4 | 9.4 |
+| 5.0 | 17.0 | 14.0 | 17.0 | 10.0 |
+| 5.1 | 17.1 | 14.1 | 17.1 | 10.1 |
+| 5.2 | 17.2 | 14.2 | 17.2 | 10.2 |
+| 5.3 | 17.4 | 14.4 | 17.4 | 10.4 |
 
 ## Installation
 
@@ -93,7 +98,7 @@ To integrate SFSafeSymbols using the Xcode-built-in SPM, choose `File` → `Swif
 To integrate using the standalone version of Apple's Swift Package Manager, add the following as a dependency to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/SFSafeSymbols/SFSafeSymbols.git", .upToNextMajor(from: "4.1.1"))
+.package(url: "https://github.com/SFSafeSymbols/SFSafeSymbols.git", .upToNextMajor(from: "5.3"))
 ```
 
 After specifying `"SFSafeSymbols"` as a dependency of the target in which you want to use it, run `swift package update`.
@@ -103,7 +108,7 @@ After specifying `"SFSafeSymbols"` as a dependency of the target in which you wa
 Add the following entry to your Cartfile:
 
 ```
-github "SFSafeSymbols/SFSafeSymbols" ~> 4.1.1
+github "SFSafeSymbols/SFSafeSymbols" ~> 5.3
 ```
 
 Then run `carthage update`.
@@ -113,7 +118,7 @@ Then run `carthage update`.
 Add the following entry to your Podfile:
 
 ```rb
-pod 'SFSafeSymbols', '~> 4.1.1'
+pod 'SFSafeSymbols', '~> 5.3'
 ```
 
 Then run `pod install`.
@@ -148,6 +153,17 @@ There are also `SwiftUI.Label` initializers:
 ```swift
 Label("MyText", systemSymbol: .cCircle)
 Label(LocalizedStringKey("my.text"), systemSymbol: SFSymbol.eCircleFill)
+```
+
+... and an initializer for `SwiftUI.Button`:
+
+```swift
+Button("MyText", systemSymbol: .cCircle){}
+Button(LocalizedStringKey("my.text"), systemSymbol: SFSymbol.eCircleFill){}
+Button("MyText", systemSymbol: .cCircle, role: .cancel){}
+Button(LocalizedStringKey("my.text"), systemSymbol: SFSymbol.eCircleFill, role: .cancel){}
+Button("MyText", systemSymbol: .cCircle, role: .cancel, intent: intent)
+Button(LocalizedStringKey("my.text"), systemSymbol: SFSymbol.eCircleFill, intent: intent)
 ```
 
 ... and an initializer for `UIApplicationShortcutItem`:
