@@ -2,6 +2,8 @@
 
 @available(iOS 13.0, macOS 11.0, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
 extension SFSymbol {
+    @available(*, deprecated, renamed: "allSymbols")
+    public static var allCases: [SFSymbol] { Array(allSymbols) }
 
     internal static let allLocalizations: [SFSymbol : Set<Localization>] = {
         var result = localizationsAvailableSince1_0
@@ -49,6 +51,12 @@ extension SFSymbol {
         }
         if #available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *) {
             result.merge(localizationsAvailableSince5_3) { $0.union($1) }
+        }
+        if #available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *) {
+            result.merge(localizationsAvailableSince5_4) { $0.union($1) }
+        }
+        if #available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *) {
+            result.merge(localizationsAvailableSince6_0) { $0.union($1) }
         }
         return result
     }()
@@ -99,6 +107,12 @@ extension SFSymbol {
         }
         if #available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *) {
             result.subtract(symbolsDeprecatedSince5_3)
+        }
+        if #available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *) {
+            result.subtract(symbolsDeprecatedSince5_4)
+        }
+        if #available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *) {
+            result.subtract(symbolsDeprecatedSince6_0)
         }
         return result
     }()

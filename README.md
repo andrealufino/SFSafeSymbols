@@ -10,8 +10,8 @@
         <img src="https://img.shields.io/badge/swift-5-FFAC45.svg" alt="Swift: 5">
     </a>
     <a href="https://github.com/SFSafeSymbols/SFSafeSymbols/releases">
-    <img src="https://img.shields.io/badge/version-5.3-blue.svg"
-    alt="Version: 5.3">
+    <img src="https://img.shields.io/badge/version-6-blue.svg"
+    alt="Version: 6">
     </a>
     <a href="#">
     <img src="https://img.shields.io/badge/Platforms-iOS%20|%20tvOS%20|%20watchOS%20|%20macOS-FF69B4.svg"
@@ -82,6 +82,8 @@ The following SF Symbols versions are currently supported:
 | 5.1 | 17.1 | 14.1 | 17.1 | 10.1 |
 | 5.2 | 17.2 | 14.2 | 17.2 | 10.2 |
 | 5.3 | 17.4 | 14.4 | 17.4 | 10.4 |
+| 5.4 | 17.6 | 14.6 | 17.6 | 10.6 |
+| 6.0 | 18.0 | 15.0 | 18.0 | 11.0 |
 
 ## Installation
 

@@ -58,6 +58,10 @@
 		CCCCD01A252F622B00C7CE9F /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCD015252F622B00C7CE9F /* UIImageExtensionTests.swift */; };
 		CCCCD047252F632600C7CE9F /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCD046252F632600C7CE9F /* NSImageExtension.swift */; };
 		CCCCD064252F804400C7CE9F /* NSImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCD055252F7F7F00C7CE9F /* NSImageExtensionTests.swift */; };
+		F4917B9A2CB40F590028171F /* SFSymbol+6.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B992CB40F590028171F /* SFSymbol+6.0.swift */; };
+		F4917B9B2CB40F590028171F /* SFSymbol+5.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B982CB40F590028171F /* SFSymbol+5.4.swift */; };
+		F4917B9E2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B9C2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift */; };
+		F4917B9F2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B9D2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift */; };
 		OBJ_64 /* SFSafeSymbols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SFSafeSymbols::SFSafeSymbols::Product" /* SFSafeSymbols.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +127,10 @@
 		CCCCD015252F622B00C7CE9F /* UIImageExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTests.swift; sourceTree = "<group>"; };
 		CCCCD046252F632600C7CE9F /* NSImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtension.swift; sourceTree = "<group>"; };
 		CCCCD055252F7F7F00C7CE9F /* NSImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensionTests.swift; sourceTree = "<group>"; };
+		F4917B982CB40F590028171F /* SFSymbol+5.4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+5.4.swift"; sourceTree = "<group>"; };
+		F4917B992CB40F590028171F /* SFSymbol+6.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+6.0.swift"; sourceTree = "<group>"; };
+		F4917B9C2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+5.4.swift"; sourceTree = "<group>"; };
+		F4917B9D2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+6.0.swift"; sourceTree = "<group>"; };
 		OBJ_26 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		OBJ_27 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_29 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -221,6 +229,8 @@
 				B01C18692B55D9B300AC4288 /* SFSymbol+5.1.swift */,
 				B01C18662B55D9B300AC4288 /* SFSymbol+5.2.swift */,
 				B0B851FF2C1DC9B000E87F17 /* SFSymbol+5.3.swift */,
+				F4917B982CB40F590028171F /* SFSymbol+5.4.swift */,
+				F4917B992CB40F590028171F /* SFSymbol+6.0.swift */,
 				636A46B528002818007E6028 /* SFSymbol+AllSymbols.swift */,
 				636A46AB28002816007E6028 /* SFSymbol+AllSymbols+1.0.swift */,
 				B0AEA82E2801A8FE00A02015 /* SFSymbol+AllSymbols+1.1.swift */,
@@ -238,6 +248,8 @@
 				B01C18672B55D9B300AC4288 /* SFSymbol+AllSymbols+5.1.swift */,
 				B01C18682B55D9B300AC4288 /* SFSymbol+AllSymbols+5.2.swift */,
 				B0B851FE2C1DC9B000E87F17 /* SFSymbol+AllSymbols+5.3.swift */,
+				F4917B9C2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift */,
+				F4917B9D2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift */,
 				636A46AF28002817007E6028 /* SymbolLocalizations.swift */,
 			);
 			path = Symbols;
@@ -421,6 +433,8 @@
 			files = (
 				CCCCCFF0252F61E700C7CE9F /* SwiftUILabelExtension.swift in Sources */,
 				B01C186F2B55D9B300AC4288 /* SFSymbol+AllSymbols+5.1.swift in Sources */,
+				F4917B9A2CB40F590028171F /* SFSymbol+6.0.swift in Sources */,
+				F4917B9B2CB40F590028171F /* SFSymbol+5.4.swift in Sources */,
 				CCA29C3E285B4E9400133245 /* SFSymbol+4.0.swift in Sources */,
 				B0AEA82B2801A8E000A02015 /* SFSymbol+1.1.swift in Sources */,
 				636A46C728002819007E6028 /* SFSymbol+1.0.swift in Sources */,
@@ -453,6 +467,8 @@
 				636A46BD28002819007E6028 /* SFSymbol+2.0.swift in Sources */,
 				CCCCCFEF252F61E700C7CE9F /* UIApplicationShortcutIconExtension.swift in Sources */,
 				636A46BE28002819007E6028 /* SFSymbol+AllSymbols+3.2.swift in Sources */,
+				F4917B9E2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift in Sources */,
+				F4917B9F2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift in Sources */,
 				B01C186D2B55D9B300AC4288 /* SFSymbol+5.0.swift in Sources */,
 				CCA29C3D285B4E9400133245 /* SFSymbol+AllSymbols+4.0.swift in Sources */,
 				B0B852012C1DC9B000E87F17 /* SFSymbol+5.3.swift in Sources */,
