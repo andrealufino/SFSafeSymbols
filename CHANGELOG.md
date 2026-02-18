@@ -8,8 +8,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Added
 
+- None
+
+### Changed
+
+- Switched to computed properties for a smaller binary size (By [Steven Sorial](https://github.com/StevenSorial))
+
+### Fixed
+
+- Fix to build by pre-Xcode 26.0 versions (By [Phineas Guo](https://github.com/guoPhineas))
+
+## [7.0.0] - 2025-10-26
+
+### Added
+
 - Add support for the SwiftUI element Tab (By [Tim Müller-Seydlitz](https://github.com/timbms))
-- Add support for SF Symbols 6.3, 6.4, and 7.0 ([F1248](https://github.com/F1248))
+- Add support for SF Symbols 6.3, 6.4, and 7.0 (By [F1248](https://github.com/F1248))
 
 ### Changed
 
